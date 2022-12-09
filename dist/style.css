@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.employee-card {
+    display: flex;
+    height: fit-content;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(163, 173, 228);
+}
+.card-name {
+    font-size: larger;
+    padding: 0rem .75rem;
+    padding-top: .5rem 
+}
+.card-title {
+    padding: 0rem .75rem;
+    padding-bottom: .5rem
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 50%;
+    align-items: center;
+    font-size: smaller;
+    background-color:rgb(204, 201, 234);
+}
