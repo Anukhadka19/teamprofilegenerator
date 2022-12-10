@@ -1,3 +1,4 @@
+// Import HTML generating function
 const generateHTML = require("./src/generateHTML");
 
 // Application profiles
@@ -9,6 +10,8 @@ const Intern = require("./lib/Intern");
 // Recap of node.js
 const inquirer = require('inquirer');
 const fs = require('fs');
+
+const path = require('path');
 
 // Array of questions for employee input 
 const employees = []
@@ -47,6 +50,7 @@ function createteam() {
         })
 }
 
+// Inquirer for employees and function that runs the inquirer 
 
     function addManager() {
         inquirer
@@ -148,7 +152,11 @@ function createteam() {
     }
 
     function addTeam() {
-
+    fs.writeFileSync(
+        path.join(path.resolve(__dirname, 'dist'), 'team.html'),
+        generateHTML(employees),
+        "utf-8"
+    )
     }
     
     addManager()

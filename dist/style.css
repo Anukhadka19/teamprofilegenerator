@@ -5,9 +5,11 @@
 }
 .employee-card {
     display: flex;
-    height: fit-content;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(163, 173, 228);
+    width: 320px;
+    padding: 20px;
+    border: 1px solid cornsilk;
+    font-family: Arial, Helvetica, serif;
+    background-color: rgb(194, 216, 240);
 }
 .card-name {
     font-size: larger;
@@ -16,15 +18,16 @@
 }
 .card-title {
     padding: 0rem .75rem;
-    padding-bottom: .5rem
+    padding-bottom: .5rem;
+    font-size: 50px;
 }
 
 .card-body {
     display: flex;
     flex-direction: column;
     width: 75%;
-    height: 50%;
+    height: 75%;
     align-items: center;
     font-size: smaller;
-    background-color:rgb(204, 201, 234);
+    background-color:rgb(155, 221, 198);
 }
